@@ -1,0 +1,110 @@
+/*/////////////////////// ABOUT HERO ///////////////////////////////*/
+#about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--primary-color);
+}
+
+#about-section h1,
+#about-section img {
+    width: 425px;
+    text-align: right;
+    color: var(--white);
+}
+
+#about-section h1 span {
+    color: var(--black);
+    background-color: var(--secondary-color);
+}
+
+#about-section img {
+    max-height: 450px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*/////////////////////// OUR STORY ///////////////////////////////*/
+#our-story-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#our-story-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+/*/////////////////////// CONTACT ///////////////////////////////*/
+#contact-section {
+    background-color: var(--white);
+    min-height: 100px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+
+#contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+}
+
+#contact-mobile :first-child,
+#contact-email :first-child,
+#contact-address :first-child {
+    font-weight: bold;
+    color: var(--black);
+}
+
+#contact-mobile :last-child,
+#contact-email :last-child,
+#contact-address :last-child {
+    color: var(--black);
+    margin-top: 10px;
+}
+
+#contact-mobile,
+#contact-email,
+#contact-address {
+    /* background-color: var(--secondary-color); */
+    padding: 25px;
+    margin: 0 10px;
+    /* border-radius: 10px; */
+}
+
+@media screen and (max-width:800px) {
+    #about-section {
+        flex-direction: column;
+    }
+
+    #about-section h1,
+    #about-section img {
+        width: 325px;
+        text-align: right;
+        color: var(--white);
+    }
+
+    #our-story-content {
+        width: 350px;
+    }
+
+    #contact-content {
+        flex-direction: column;
+    }
+}
