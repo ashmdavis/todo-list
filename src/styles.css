@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #000000;
+    --color-secondary: #707070;
+    --color-accent: red;
+    --style-font: BebasNeue;
+    --font-size-headers: 1.75rem;
+    --font-size-subheaders: 1rem;
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    font-family: var(--style-font);
+    font-weight: 100;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
