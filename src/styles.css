@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #000000;
+    --color-secondary: #707070;
+    --color-accent: red;
+    --color-background: white;
+    --style-font: BebasNeue;
+    --text-font: Roboto;
+    --font-size-headers: 1.70rem;
+    --font-size-subheaders: 1rem;
+    --font-size-text: 1rem;
+
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+h1,
+h2,
+button {
+    font-family: var(--style-font);
+    font-weight: 100;
+}
+
+p {
+    font-family: var(--text-font);
+}
+
+.secondary-content {
+    background-color: color-mix(in srgb, var(--color-secondary), white 85%);
+}
